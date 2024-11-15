@@ -1,0 +1,46 @@
+{
+	"Caption": "$(L,Update_Mitigations_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/risksmobile/Services/riskmanagementService.service",
+		"EntitySet": "Mitigations",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"Caption": "Cancel",
+				"OnPress": "/risksmobile/Rules/riskmanagementService/Mitigations/Mitigations_Cancel.js"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/risksmobile/Rules/riskmanagementService/Mitigations/Mitigations_UpdateEntity.js"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "createdAt",
+							"_Name": "createdAt",
+							"Value": "{createdAt}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Mitigations_Edit",
+	"PrefersLargeCaption": true
+}
