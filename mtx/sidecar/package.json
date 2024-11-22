@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": " "
+  },
   "cds": {
     "requires": {
       "destinations": true
